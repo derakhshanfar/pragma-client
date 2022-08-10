@@ -16,9 +16,7 @@ const Beer = () => {
         setItems(response);
       })
       .catch((e) => {
-        if (e.name !== 'AbortError') {
-          setError(true)
-        }
+        setError(true)
       });
   };
 
